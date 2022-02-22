@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 5px;     
+}
+
+header{
+    width: 100%;
+    border-bottom: 2px solid;
+}
+
+#container {
+    display: grid;
+    grid-template-areas:
+        "logo seccion nav"        
+        "panelIzquierdo panelIzquierdo panelDerecho"            
+        "footer footer footer";
+    grid-template-rows: 106px 100% 100%;
+    grid-template-columns: 155px auto auto;
+    grid-row-gap: 3px;
+    
+    
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+section#logo {
+    grid-area: logo;
+    width: 155px;
+    height: 103px;
+    
+    
+    border-bottom: 3px solid;
+    
+}
+
+footer {
+    grid-area: footer;
+    height: 20px;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+}
+div#comodin{
+    height: 100%;
+    width: 2fr;
+    background-color: blue;
+}
+
+section#seccion {
+    grid-area: seccion;    
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 35px;
+    font-size: 30px;
+    border-bottom: solid 3px;
+    background-color: burlywood;
+
+}
+
+section#panelDerecho {
+    grid-area: panelDerecho;
+    background-color: blue;
+}
+
+section#panelIzquierdo{
+    grid-area: panelIzquierdo;
+    background-color: red;
+}
+
+nav{
+    display: grid;    
+    grid-template-columns: repeat(5, 1fr);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top:35px;        
+    border-bottom: 3px solid;
+    background-color: blue;
+}
+nav div{
+    border: 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    margin: 3px;
+    background-color: rgb(225, 231, 231);
+    height: 25px;
+}
+
+
+
+
+
