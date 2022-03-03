@@ -261,7 +261,7 @@ a:link {
 /*STARTS PRODUCTS SECTION*/
 .container-products {
     max-width: 1366px;
-    height: auto;
+    height: 105vh;
     margin: auto;
     display: grid;
     grid-template-areas:
@@ -340,7 +340,7 @@ a:link {
 /*STARTS CONTACT SECTION*/
 .container-contacts{
     max-width: 1366px;
-    height: auto;
+    height: 105vh;
     margin: auto;
     display: grid;
     grid-template-areas: "logo seccion nav nav nav nav nav"    

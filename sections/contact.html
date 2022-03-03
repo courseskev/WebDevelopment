@@ -5,52 +5,134 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/gridsStyles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/bootstrap.css">
     <title>WorkApps - Contacts</title>
 </head>
 
 
 <body>
-    <div class="container-contacts container">
-        <div class="logo">
-            <img src="../images/iconoWorkApps.PNG" alt="iconoWorkApps">
-        </div>
-        <div class="seccion">CONTÁCTENOS</div>
-
-        <nav class="nav">
-            <div class="menu">
-                <a href="../index.html">Inicio</a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../images/iconoWorkApps.PNG" alt="" width="155" height="112"
+                        class="d-inline-block align-text-top">
+                </a>
+                <h1>CONTÁCTENOS</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./products.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./services.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contáctenos</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="menu">
-                <a href="./about.html">Nosotros</a>
-            </div>
-            <div class="menu">
-                <a href="./products.html">Productos</a>
-            </div>
-            <div class="menu">
-                <a href="./services.html">Servicios</a>
-            </div>
-            <div class="menu">
-                <a href="./contact.html">Contáctenos</a>
-            </div>
-
         </nav>
+    </header>
 
 
 
 
-        <div class="content-contacto">
-            <form class='contacto'>
-                <div><label>Tu Nombre:</label><input type='text' value=''></div>
-                <div><label>Tu Email:</label><input type='text' value=''></div>
-                <div><label>Asunto:</label><input type='text' value=''></div>
-                <div><label>Mensaje:</label><textarea rows='6'></textarea></div>
-                <div><input type='submit' value='Envia Mensaje'></div>
-            </form>
+    <div class="jumbotron jumbotron-sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-12">
+                    <h1 class="h1">
+                        Amigo <small>sientete libre de contactarnos</small></h1>
+                </div>
+            </div>
         </div>
-
-        <footer class="footer">©2022 por WorkApps</footer>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="well well-sm">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="name">
+                                        Nombre</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Ingresar nombre"
+                                        required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">
+                                        Correo electrónico</label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><span
+                                                class="glyphicon glyphicon-envelope"></span>
+                                        </span>
+                                        <input type="email" class="form-control" id="email" placeholder="Ingresar email"
+                                            required="required" /></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">
+                                        Asunto</label>
+                                    <select id="subject" name="subject" class="form-control" required="required">
+                                        <option value="na" selected="">Elegir:</option>
+                                        <option value="service">Servicios</option>
+                                        <option value="suggestions">Desarrollos</option>
+                                        <option value="product">Asesorías</option>
+                                        <option value="product">Otros</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="name">
+                                        Mensaje</label>
+                                    <textarea name="message" id="message" class="form-control" rows="9" cols="25"
+                                        required="required" placeholder="Mensaje"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                                    Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <form>
+                    <legend><span class="glyphicon glyphicon-globe"></span>Nuestra oficina</legend>
+                    <address>
+                        <strong>WorkApps SA</strong><br>
+                        Calle 52A 20-32 office 403<br>
+                        Bogotá, Colombia <br>
+                        +57 (601) 7123762
+                    </address>
+                    <address>
+                        <strong>John Wright</strong><br>
+                        <a href="mailto:#">support@workapps.com.co</a>
+                    </address>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">©2022 por WorkApps</footer>
+
 </body>
 
 </html>

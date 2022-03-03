@@ -5,45 +5,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/gridsStyles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/bootstrap.css">
     <title>WorkApps - Servicios</title>
 </head>
 
 
 <body>
-    <div class="container-services container">
-
-        <div class="logo">
-            <img src="../images/iconoWorkApps.PNG" alt="iconoWorkApps">
-        </div>
-        <div class="seccion">SERVICIOS</div>
-
-        <nav class="nav">
-            <div class="menu">
-                <a href="../index.html">Inicio</a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../images/iconoWorkApps.PNG" alt="" width="155" height="112"
+                        class="d-inline-block align-text-top">
+                </a>
+                <h1>SERVICIOS</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./products.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./services.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contáctenos</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="menu">
-                <a href="./about.html">Nosotros</a>
-            </div>
-            <div class="menu">
-                <a href="./products.html">Productos</a>
-            </div>
-            <div class="menu">
-                <a href="./services.html">Servicios</a>
-            </div>
-            <div class="menu">
-                <a href="./contact.html">Contáctenos</a>
-            </div>
-
         </nav>
+    </header>
+
+    <main class="container-services">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-6">
+                <video autoplay muted>
+                    <source src="../images/conexion_AI.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="col-12 col-md-6">
+                <h3>Conexiones de la Inteligencia Artificial</h3>
+                <p>La inteligencia artificial y la robótica tienen muchas aplicaciones hoy en día y cada vez son es más
+                    allegada a un entorno doméstico donde se puede ver la interconexión entre el humano y la máquina,
+                    haciendo de nuestros días un más amenos, delegando labores rutinarias a esta tecnología y así
+                    enfocandonos en lo que más nos importa.</p>
+            </div>
+        </div>
+        <div class="spacing"></div>
+        <div class="row align-items-center">
+            <div class="col-12 col-md-6">
+                <h3>Medicina</h3>
+                <p>Un segmento enorme donde se puede sacar provecho a este tipo de software es en la medicina. Todo este
+                    campo nos permite explotar la capacidad de computo de las máquinas procesando miles de datos en
+                    simultáneo para llegar a una conclusión rápida, que ayuda a los profesinales de esta rama tomar
+                    decisiones precisas y con un respaldo impecable, salvando vidas y mejorando la atención de todo el
+                    servicio médico.</p>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <video autoplay muted>
+                    <source src="../images/medicine.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="spacing"></div>
+        <div class="row align-items-center">
+            <div class="col-12 col-md-6">
+                <video autoplay muted>
+                    <source src="../images/humanBody.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="col-12 col-md-6">
+                <h3>Software de entrenamiento médico</h3>
+                <p>Relacionado con nuestro software de tiempo real, también nos especializamos en crear software para la
+                    preparación de futuros profesionales que permitirán con seguridad tomar decisiones efectivas y
+                    formarse de una forma clara, detallada y muy cercana a la vida real, con modelos de simulación en 3D
+                    que permiten ver de una forma nueva y diferente las reacciones dentro del cuerpo humano.</p>
+            </div>
+        </div>
+        <div class="spacing"></div>
+        <div class="row align-items-center">
+            <div class="col-12 col-md-6">
+                <h3>Desarrollando talento</h3>
+                <p>Esta área busca que desde muy temprana edad, los jóvenes se vayan instruyendo y tengan un espacio
+                    donde la creatividad fluya y puedan desarrollar prototipos robóticos en donde son guiados por
+                    ingenieros y profesionales de diferentes áreas.</p>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <video autoplay muted>
+                    <source src="../images/desarrolloTalento.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </main>
 
 
-
-
-        
-
-        <footer class="footer">©2022 por WorkApps</footer>
-    </div>
+    <footer>© 2022 WorkApps</footer>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
 
 </html>
