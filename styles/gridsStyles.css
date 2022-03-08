@@ -338,26 +338,27 @@ a:link {
 
 
 /*STARTS CONTACT SECTION*/
-.container-contacts{
+.container-contacts {
     max-width: 1366px;
     height: 105vh;
     margin: auto;
     display: grid;
-    grid-template-areas: "logo seccion nav nav nav nav nav"    
-            "contact contact contact contact contact contact contact "
-            "footer footer footer footer footer footer footer";
+    grid-template-areas: "logo seccion nav nav nav nav nav"
+        "contact contact contact contact contact contact contact "
+        "footer footer footer footer footer footer footer";
     grid-template-columns: 150px repeat(6, 1fr);
-    grid-template-rows: auto 1fr  .1fr;        
+    grid-template-rows: auto 1fr .1fr;
 }
+
 .container-contacts .content-contacto {
-    grid-area: contact;    
+    grid-area: contact;
     justify-self: center;
 }
 
 .contacto {
     border: 1px solid #CED5D7;
     border-radius: 6px;
-    padding: 45px 45px 20px;    
+    padding: 45px 45px 20px;
     background-color: white;
     box-shadow: 0px 5px 10px #B5C1C5, 0 0 0 10px #EEF5F7 inset;
     width: 300px;
@@ -427,22 +428,25 @@ a:link {
 
 
 @media screen and (max-width: 768px) {
-    .container {
-        grid-template-areas:
-            "logo seccion nav nav nav nav nav"
-            "banner banner banner banner banner banner banner"
-            "panelIzquierdo panelIzquierdo panelIzquierdo panelIzquierdo panelIzquierdo panelIzquierdo panelIzquierdo "
-            "panelDerecho panelDerecho panelDerecho panelDerecho panelDerecho panelDerecho panelDerecho"
-            "footer footer footer footer footer footer footer";
 
-        grid-template-columns: 110px repeat(6, 1fr);
-        grid-template-rows: auto 1fr .7fr .3fr;
+    .container {
+        height: auto;
+        margin: auto;
+        grid-template-areas:
+            "logo seccion  seccion seccion seccion"
+            "nav nav nav nav nav"
+            "banner banner banner banner banner"
+            "panelIzquierdo panelIzquierdo panelIzquierdo panelIzquierdo panelIzquierdo"
+            "panelDerecho panelDerecho panelDerecho panelDerecho panelDerecho"
+            "footer footer footer footer footer";
+
+        grid-template-columns: 150px repeat(4, 1fr);
+        grid-template-rows: auto 100px 1fr .7fr .3fr;
 
     }
 
     .container .banner {
         grid-area: banner;
-
         animation: banner 25s infinite;
     }
 
@@ -450,52 +454,48 @@ a:link {
         grid-area: seccion;
         text-align: center;
         vertical-align: middle;
-        padding-top: 35px;
-        font-size: 15px;
+        padding-top: 40px;
+        font-size: 35px;
         border-bottom: solid 3px;
-
-
     }
 
     .container .nav {
         grid-area: nav;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        padding-left: 3px;
-        padding-right: 3px;
-        padding-top: 35px;
-        border-bottom: 3px solid;
-
+        grid-template-rows: .5fr;
+        padding: 30px;
+        background-color: #b2e0f0;
     }
 
     .container .nav .menu {
-        border: 1px solid;
-        border-radius: 10px;
         text-align: center;
-        font-size: 10px;
-        margin: 1px;
+        font-size: 13px;
         background-color: rgb(225, 231, 231);
-        height: 18px;
+        height: 30px;
+        padding-top: 12px;
+        width: auto;
     }
 
     .container .logo {
         grid-area: logo;
-        width: 110px;
-        height: 80px;
+        width: 150px;
+        height: 97%;
         border-bottom: 3px solid;
 
     }
 
     .container-about {
         grid-template-areas:
-            "logo seccion nav nav nav nav nav"
-            "panelDerecho panelDerecho panelDerecho panelDerecho panelDerecho panelDerecho panelDerecho"
-            "panelIzquierdo panelIzquierdo panelIzquierdo panelIzquierdo panelIzquierdo panelIzquierdo panelIzquierdo "
-            "team team team team team team team "
-            "footer footer footer footer footer footer footer";
+            "logo seccion  seccion seccion seccion"
+            "nav nav nav nav nav"
+            "panelDerecho panelDerecho panelDerecho panelDerecho panelDerecho"
+            "panelIzquierdo panelIzquierdo panelIzquierdo panelIzquierdo panelIzquierdo"
+            "team team team team team"
+            "footer footer footer footer footer";
 
-        grid-template-columns: 110px repeat(6, 1fr);
-        grid-template-rows: .01fr auto auto 1fr .1fr;
+
+        grid-template-columns: 150px repeat(4, 1fr);
+        /*grid-template-rows: auto 100px 1fr .7fr .3fr;*/
+        grid-template-rows: .01fr 100px auto auto 1fr .1fr;
 
     }
 
@@ -534,12 +534,14 @@ a:link {
         margin: auto;
         display: grid;
         grid-template-areas:
-            "logo seccion nav nav nav nav nav"
-            "products products products products products products products "
-            "tech tech tech tech tech tech tech "
-            "footer footer footer footer footer footer footer";
-        grid-template-columns: 110px repeat(6, 1fr);
-        grid-template-rows: auto 1fr 1fr .1fr;
+            "logo seccion  seccion seccion seccion"
+            "nav nav nav nav nav"
+            "products products products products products "
+            "tech tech tech tech tech "
+            "footer footer footer footer footer";
+
+        grid-template-columns: 150px repeat(4, 1fr);
+        grid-template-rows: auto 100px 1fr 1fr .1fr;
         grid-row-gap: 3px;
     }
 
@@ -547,7 +549,7 @@ a:link {
         grid-area: products;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 250px);        
+        grid-template-rows: repeat(3, 250px);
         text-align: center;
 
     }
@@ -562,7 +564,7 @@ a:link {
             "tech-2"
             "tech-3"
             "tech-4"
-            "tech-5";        
+            "tech-5";
         justify-items: center;
 
     }
@@ -574,6 +576,7 @@ a:link {
         font-size: 25px;
 
     }
+
     .container-products .tech .tech-1,
     .container-products .tech .tech-2,
     .container-products .tech .tech-3,
