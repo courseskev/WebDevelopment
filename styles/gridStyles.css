@@ -1,0 +1,366 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+img {
+  max-width: 100%;
+  max-height: 100%; }
+
+video {
+  max-width: 100%;
+  max-height: 100%; }
+
+a {
+  text-decoration: none;
+  outline: none; }
+  a:focus {
+    border-bottom: 1px solid; }
+  a:hover {
+    color: #2b76d8; }
+  a:link {
+    color: black; }
+
+/*STARTS INDEX SECTION*/
+.container {
+  max-width: 1366px;
+  height: auto;
+  margin: auto;
+  display: grid;
+  grid-template-areas: "logo seccion nav nav nav nav nav" "banner banner banner banner banner banner banner " "panelIzquierdo panelIzquierdo panelIzquierdo panelIzquierdo panelDerecho panelDerecho panelDerecho" "footer footer footer footer footer footer footer";
+  grid-template-columns: 150px repeat(6, 1fr);
+  grid-template-rows: 1fr 7fr 3fr 0.1fr;
+  grid-row-gap: 3px; }
+  .container .logo {
+    grid-area: logo;
+    width: 155px;
+    height: 112px;
+    border-bottom: 3px solid; }
+  .container .seccion {
+    grid-area: seccion;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 35px;
+    font-size: 25px;
+    border-bottom: solid 3px; }
+  .container nav {
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 35px;
+    border-bottom: 3px solid; }
+    .container nav .menu {
+      border: 1px solid;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 20px;
+      margin: 3px;
+      background-color: #e1e7e7;
+      height: 25px; }
+  .container .banner {
+    grid-area: banner;
+    background-size: cover;
+    animation: banner 25s infinite; }
+
+@keyframes banner {
+  0%,
+  30% {
+    background-image: url(../images/banner0_0.PNG); }
+  30%,
+  50% {
+    background-image: url(../images/banner0_1.PNG); }
+  50%,
+  75% {
+    background-image: url(../images/banner0_2.PNG); }
+  75%,
+  100% {
+    background-image: url(../images/banner0_3.PNG); }
+  100%,
+  100% {
+    background-image: url(../images/banner0_0.PNG); } }
+  .container .panelDerecho {
+    grid-area: panelDerecho;
+    align-self: center; }
+  .container .panelIzquierdo {
+    grid-area: panelIzquierdo;
+    /*background-color: rgb(239 236 226);*/
+    padding-top: 8%; }
+    .container .panelIzquierdo h2 {
+      font-size: 40px;
+      margin-top: 15px;
+      margin-bottom: 20px;
+      text-align: center; }
+    .container .panelIzquierdo p {
+      text-align: center; }
+  .container .footer {
+    grid-area: footer;
+    text-align: center;
+    font-size: 17px; }
+
+/*ENDS INDEX SECTION*/
+/*STARTS ABOUT SECTION*/
+.container-about {
+  max-width: 1366px;
+  height: auto;
+  margin: auto;
+  display: grid;
+  grid-template-areas: "logo seccion nav nav nav nav nav" "panelIzquierdo panelIzquierdo panelIzquierdo panelDerecho panelDerecho panelDerecho panelDerecho" "team team team team team team team " "footer footer footer footer footer footer footer";
+  grid-template-columns: 150px repeat(6, 1fr);
+  grid-template-rows: auto 1fr 2fr 0.1fr;
+  grid-row-gap: 3px; }
+  .container-about .panelDerecho-about {
+    grid-area: panelIzquierdo;
+    align-self: center; }
+  .container-about .panelIzquierdo-about {
+    grid-area: panelDerecho;
+    /*background-color: rgb(239 236 226);*/
+    padding-top: 5%; }
+    .container-about .panelIzquierdo-about h2 {
+      font-size: 40px;
+      text-align: center; }
+    .container-about .panelIzquierdo-about p {
+      text-align: center;
+      font-size: 20px;
+      padding: 5px; }
+  .container-about .team {
+    grid-area: team;
+    background-color: #424242; }
+
+.wrapper {
+  margin-top: 60px;
+  text-align: center; }
+  .wrapper h3 {
+    font-family: "Yatra One", cursive;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 15px; }
+
+.our_team {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .our_team .team_member {
+    width: 250px;
+    margin: 5px;
+    background: #adacac;
+    padding: 20px 10px; }
+    .our_team .team_member .member_img {
+      background: #e9e5fa;
+      max-width: 190px;
+      width: 100%;
+      height: 190px;
+      margin: 0 auto;
+      border-radius: 50%;
+      padding: 5px;
+      position: relative;
+      cursor: pointer; }
+      .our_team .team_member .member_img img {
+        width: 100%;
+        height: 100%; }
+    .our_team .team_member h3 {
+      text-transform: uppercase;
+      font-size: 18px;
+      line-height: 18px;
+      letter-spacing: 2px;
+      margin: 15px 0 0px; }
+    .our_team .team_member span {
+      font-size: 10px; }
+    .our_team .team_member p {
+      margin-top: 20px;
+      font-size: 14px;
+      line-height: 20px; }
+
+/*ENDS ABOUT SECTION*/
+/*STARTS PRODUCTS SECTION*/
+.container-products {
+  max-width: 1366px;
+  height: auto;
+  margin: auto;
+  display: grid;
+  grid-template-areas: "logo seccion nav nav nav nav nav" "products products products products products products products " "tech tech tech tech tech tech tech " "footer footer footer footer footer footer footer";
+  grid-template-columns: 150px repeat(6, 1fr);
+  grid-template-rows: auto 1fr 1fr 0.1fr;
+  grid-row-gap: 3px; }
+  .container-products .products {
+    grid-area: products;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    justify-items: stretch;
+    text-align: center;
+    margin-top: 30px; }
+  .container-products .tech {
+    grid-area: tech;
+    background-color: #f0f3f3;
+    display: grid;
+    grid-template-areas: "title title title title title" "tech-1 tech-2 tech-3 tech-4 tech-5";
+    grid-column-gap: 50px;
+    align-items: center; }
+    .container-products .tech .title {
+      grid-area: title;
+      justify-self: center;
+      border-bottom: 1px solid;
+      font-size: 25px;
+      margin-top: 60px;
+      margin-bottom: 0px;
+      margin-left: 50px; }
+    .container-products .tech .tech-1 {
+      grid-area: tech-1; }
+    .container-products .tech .tech-2 {
+      grid-area: tech-2; }
+    .container-products .tech .tech-3 {
+      grid-area: tech-3; }
+    .container-products .tech .tech-4 {
+      grid-area: tech-4; }
+    .container-products .tech .tech-5 {
+      grid-area: tech-5; }
+
+/*ENDS PRODUCTS SECTION*/
+/*STARTS CONTACT SECTION*/
+.container-contacts {
+  max-width: 1366px;
+  height: auto;
+  margin: auto;
+  display: grid;
+  grid-template-areas: "logo seccion nav nav nav nav nav" "contact contact contact contact contact contact contact " "footer footer footer footer footer footer footer";
+  grid-template-columns: 150px repeat(6, 1fr);
+  grid-template-rows: auto 1fr 0.1fr; }
+  .container-contacts .content-contacto {
+    grid-area: contact;
+    justify-self: center; }
+
+.contacto {
+  border: 1px solid #ced5d7;
+  border-radius: 6px;
+  padding: 45px 45px 20px;
+  background-color: white;
+  box-shadow: 0px 5px 10px #b5c1c5, 0 0 0 10px #eef5f7 inset;
+  width: 300px; }
+  .contacto label {
+    display: block;
+    font-weight: bold; }
+  .contacto div {
+    margin-bottom: 15px; }
+  .contacto input[type="text"],
+  .contacto textarea {
+    padding: 7px 6px;
+    width: 294px;
+    border: 1px solid #ced5d7;
+    resize: none;
+    box-shadow: 0 0 0 3px #eef5f7;
+    margin: 5px 0; }
+  .contacto input[type="text"]:focus,
+  .contacto textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #dde9ec; }
+  .contacto input[type="submit"] {
+    border: 1px solid #ced5d7;
+    box-shadow: 0 0 0 3px #eef5f7;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px white;
+    background: #e4f1f6;
+    background: -moz-linear-gradient(top, #e4f1f6 0%, #cfe6ef 100%);
+    background: -webkit-linear-gradient(top, #e4f1f6 0%, #cfe6ef 100%); }
+  .contacto input[type="submit"]:hover {
+    background: #edfcff;
+    background: -moz-linear-gradient(top, #edfcff 0%, #cfe6ef 100%);
+    background: -webkit-linear-gradient(top, #edfcff 0%, #cfe6ef 100%); }
+  .contacto input[type="submit"]:active {
+    background: #cfe6ef;
+    background: -moz-linear-gradient(top, #cfe6ef 0%, #edfcff 100%);
+    background: -webkit-linear-gradient(top, #cfe6ef 0%, #edfcff 100%); }
+
+/*FINISH CONTACT  SECTION*/
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-areas: "logo seccion nav nav nav nav nav" "banner banner banner banner banner banner banner" "panelIzquierdo panelIzquierdo panelIzquierdo panelIzquierdo panelIzquierdo panelIzquierdo panelIzquierdo " "panelDerecho panelDerecho panelDerecho panelDerecho panelDerecho panelDerecho panelDerecho" "footer footer footer footer footer footer footer";
+    grid-template-columns: 110px repeat(6, 1fr);
+    grid-template-rows: auto 1fr 0.7fr 0.3fr; }
+    .container .banner {
+      grid-area: banner;
+      animation: banner 25s infinite; }
+    .container .seccion {
+      grid-area: seccion;
+      text-align: center;
+      vertical-align: middle;
+      padding-top: 35px;
+      font-size: 15px;
+      border-bottom: solid 3px; }
+    .container nav {
+      grid-area: nav;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      padding-left: 3px;
+      padding-right: 3px;
+      padding-top: 35px;
+      border-bottom: 3px solid; }
+      .container nav .menu {
+        border: 1px solid;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 10px;
+        margin: 1px;
+        background-color: #e1e7e7;
+        height: 18px; }
+    .container .logo {
+      grid-area: logo;
+      width: 110px;
+      height: 80px;
+      border-bottom: 3px solid; }
+  .container-about {
+    grid-template-areas: "logo seccion nav nav nav nav nav" "panelDerecho panelDerecho panelDerecho panelDerecho panelDerecho panelDerecho panelDerecho" "panelIzquierdo panelIzquierdo panelIzquierdo panelIzquierdo panelIzquierdo panelIzquierdo panelIzquierdo " "team team team team team team team " "footer footer footer footer footer footer footer";
+    grid-template-columns: 110px repeat(6, 1fr);
+    grid-template-rows: 0.01fr auto auto 1fr 0.1fr; }
+    .container-about .panelDerecho-about {
+      grid-area: panelIzquierdo;
+      align-self: center; }
+    .container-about .panelIzquierdo-about {
+      grid-area: panelDerecho;
+      /*background-color: rgb(239 236 226);*/ }
+      .container-about .panelIzquierdo-about h2 {
+        font-size: 40px;
+        text-align: center; }
+      .container-about .panelIzquierdo-about p {
+        text-align: center;
+        font-size: 20px; }
+    .container-about .team {
+      grid-area: team;
+      background-color: #424242; }
+  .wrapper {
+    text-align: center; }
+  .container-products {
+    max-width: 1366px;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "logo seccion nav nav nav nav nav" "products products products products products products products " "tech tech tech tech tech tech tech " "footer footer footer footer footer footer footer";
+    grid-template-columns: 110px repeat(6, 1fr);
+    grid-template-rows: auto 1fr 1fr 0.1fr;
+    grid-row-gap: 3px; }
+  .products {
+    grid-area: products;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 250px);
+    text-align: center; }
+  .tech {
+    grid-area: tech;
+    background-color: #f0f3f3;
+    display: grid;
+    grid-template-areas: "title" "tech-1" "tech-2" "tech-3" "tech-4" "tech-5";
+    justify-items: center; }
+    .tech .title {
+      grid-area: title;
+      justify-self: center;
+      border-bottom: 1px solid;
+      font-size: 25px; }
+    .tech .tech-1,
+    .tech .tech-2,
+    .tech .tech-3,
+    .tech .tech-4,
+    .tech .tech-5 {
+      height: 100px; } }
