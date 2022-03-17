@@ -1,5 +1,8 @@
-$max-width-img-video: 100%;
-$max-heigth-img-video: 100%;
+
+@mixin size_img_video($h, $w){
+    max-width: $w;
+    max-height: $h;
+}
 
 * {
     padding: 0;
@@ -7,13 +10,11 @@ $max-heigth-img-video: 100%;
 }
 
 img {
-    max-width: $max-width-img-video;
-    max-height: $max-width-img-video;
+    @include size_img_video(100%, 100%);    
 }
 
 video {
-    max-width: $max-width-img-video;
-    max-height: $max-width-img-video;
+    @include size_img_video(100%, 100%);
 }
 
 a {
