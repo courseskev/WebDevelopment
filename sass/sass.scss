@@ -3,6 +3,13 @@
     max-width: $w;
     max-height: $h;
 }
+$titles:(
+    index: "SASS II",
+    about: "Nosotros",    
+    product: "Productos",
+    services: "Servicios",
+    contact: "Contactenos",
+);
 
 * {
     padding: 0;
@@ -55,14 +62,28 @@ a {
         height: 112px;
         border-bottom: 3px solid;
     }
-    .seccion {
+
+    @each $name, $value in $titles {
+        .seccion_#{$name} {
+            grid-area: seccion;
+            text-align: center;
+            vertical-align: middle;
+            padding-top: 35px;
+            font-size: 25px;
+            border-bottom: solid 3px;
+            content: $value;
+        }
+      }
+    /*.seccion_index {
         grid-area: seccion;
-        text-align: center;
-        vertical-align: middle;
-        padding-top: 35px;
-        font-size: 25px;
-        border-bottom: solid 3px;
-    }
+            text-align: center;
+            vertical-align: middle;
+            padding-top: 35px;
+            font-size: 25px;
+            border-bottom: solid 3px;
+            
+     
+    }*/
     nav {
         grid-area: nav;
         display: grid;

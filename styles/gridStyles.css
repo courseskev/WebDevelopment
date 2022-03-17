@@ -29,19 +29,62 @@ a {
   grid-template-areas: "logo seccion nav nav nav nav nav" "banner banner banner banner banner banner banner " "panelIzquierdo panelIzquierdo panelIzquierdo panelIzquierdo panelDerecho panelDerecho panelDerecho" "footer footer footer footer footer footer footer";
   grid-template-columns: 150px repeat(6, 1fr);
   grid-template-rows: 1fr 7fr 3fr 0.1fr;
-  grid-row-gap: 3px; }
+  grid-row-gap: 3px;
+  /*.seccion_index {
+        grid-area: seccion;
+            text-align: center;
+            vertical-align: middle;
+            padding-top: 35px;
+            font-size: 25px;
+            border-bottom: solid 3px;
+            
+     
+    }*/ }
   .container .logo {
     grid-area: logo;
     width: 155px;
     height: 112px;
     border-bottom: 3px solid; }
-  .container .seccion {
+  .container .seccion_index {
     grid-area: seccion;
     text-align: center;
     vertical-align: middle;
     padding-top: 35px;
     font-size: 25px;
-    border-bottom: solid 3px; }
+    border-bottom: solid 3px;
+    content: "SASS II"; }
+  .container .seccion_about {
+    grid-area: seccion;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 35px;
+    font-size: 25px;
+    border-bottom: solid 3px;
+    content: "Nosotros"; }
+  .container .seccion_product {
+    grid-area: seccion;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 35px;
+    font-size: 25px;
+    border-bottom: solid 3px;
+    content: "Productos"; }
+  .container .seccion_services {
+    grid-area: seccion;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 35px;
+    font-size: 25px;
+    border-bottom: solid 3px;
+    content: "Servicios"; }
+  .container .seccion_contact {
+    grid-area: seccion;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 35px;
+    font-size: 25px;
+    border-bottom: solid 3px;
+    content: "Contactenos"; }
   .container nav {
     grid-area: nav;
     display: grid;
