@@ -15,6 +15,9 @@ $titles:(
     padding: 0;
     margin: 0;
 }
+body{
+    margin:5px;
+}
 
 img {
     @include size_img_video(100%, 100%);    
@@ -63,7 +66,9 @@ a {
     border-bottom: 1px solid;
     margin: 8px;
 }
-
+span{
+    margin:5%;
+}
 footer {
     background-color: rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -126,16 +131,7 @@ footer {
             content: $value;
         }
       }
-    /*.seccion_index {
-        grid-area: seccion;
-            text-align: center;
-            vertical-align: middle;
-            padding-top: 35px;
-            font-size: 25px;
-            border-bottom: solid 3px;
-            
-     
-    }*/
+
     nav {
         grid-area: nav;
         display: grid;
@@ -238,7 +234,7 @@ footer {
 
     .panelIzquierdo-about {
         grid-area: panelDerecho;
-        /*background-color: rgb(239 236 226);*/
+        background-color: rgb(239, 236, 226);
         padding-top: 5%;
         h2 {
             font-size: 40px;
@@ -253,7 +249,7 @@ footer {
     }
     .team {
         grid-area: team;
-        background-color: rgb(66, 66, 66);
+        background-color: rgba(66, 66, 66, .70);
     }
 }
 
@@ -319,74 +315,23 @@ footer {
 /*ENDS ABOUT SECTION*/
 
 /*STARTS PRODUCTS SECTION*/
-.container-products {
-    max-width: 1366px;
-    height: auto;
+
+.container-products{
     margin: auto;
-    display: grid;
-    grid-template-areas:
-        "logo seccion nav nav nav nav nav"
-        "products products products products products products products "
-        "tech tech tech tech tech tech tech "
-        "footer footer footer footer footer footer footer";
-    grid-template-columns: 150px repeat(6, 1fr);
-    grid-template-rows: auto 1fr 1fr 0.1fr;
-    grid-row-gap: 3px;
-
-    .products {
-        grid-area: products;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-
-        grid-column-gap: 20px;
-        justify-items: stretch;
-        text-align: center;
-        margin-top: 30px;
-    }
-
-    .tech {
-        grid-area: tech;
-        background-color: rgb(240, 243, 243);
-        display: grid;
-        grid-template-areas:
-            "title title title title title"
-            "tech-1 tech-2 tech-3 tech-4 tech-5";
-        grid-column-gap: 50px;
-        align-items: center;
-
-        .title {
-            grid-area: title;
-            justify-self: center;
-            border-bottom: 1px solid;
-            font-size: 25px;
-            margin-top: 60px;
-            margin-bottom: 0px;
-            margin-left: 50px;
-        }
-
-        .tech-1 {
-            grid-area: tech-1;
-        }
-
-        .tech-2 {
-            grid-area: tech-2;
-        }
-
-        .tech-3 {
-            grid-area: tech-3;
-        }
-
-        .tech-4 {
-            grid-area: tech-4;
-        }
-
-        .tech-5 {
-            grid-area: tech-5;
-        }
-    }
+    padding: 10px;
+    text-align: center;
 }
 
 /*ENDS PRODUCTS SECTION*/
+
+/*STARTS SERVICES SECTION*/
+.container-services{
+    max-width: 1366px;
+    height: auto;
+    margin: auto;
+}
+/*ENDS SERVICES SECTION*/
+
 
 /*STARTS CONTACT SECTION*/
 .container-contacts {
@@ -474,7 +419,7 @@ footer {
 
         .panelIzquierdo-about {
             grid-area: panelDerecho;
-            /*background-color: rgb(239 236 226);*/
+            background-color: rgb(239, 236, 226);
             h2 {
                 font-size: 40px;
                 text-align: center;
@@ -488,61 +433,12 @@ footer {
 
         .team {
             grid-area: team;
-            background-color: rgb(66, 66, 66);
+            background-color: rgba(66, 66, 66, .70);
         }
     }
 
     .wrapper {
         text-align: center;
     }
-    .container-products {
-        max-width: 1366px;
-        height: auto;
-        margin: auto;
-        display: grid;
-        grid-template-areas:
-            "logo seccion nav nav nav nav nav"
-            "products products products products products products products "
-            "tech tech tech tech tech tech tech "
-            "footer footer footer footer footer footer footer";
-        grid-template-columns: 110px repeat(6, 1fr);
-        grid-template-rows: auto 1fr 1fr 0.1fr;
-        grid-row-gap: 3px;
-    }
-
-    .products {
-        grid-area: products;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 250px);
-        text-align: center;
-    }
-
-    .tech {
-        grid-area: tech;
-        background-color: rgb(240, 243, 243);
-        display: grid;
-        grid-template-areas:
-            "title"
-            "tech-1"
-            "tech-2"
-            "tech-3"
-            "tech-4"
-            "tech-5";
-        justify-items: center;
-
-        .title {
-            grid-area: title;
-            justify-self: center;
-            border-bottom: 1px solid;
-            font-size: 25px;
-        }
-        .tech-1,
-        .tech-2,
-        .tech-3,
-        .tech-4,
-        .tech-5 {
-            height: 100px;
-        }
-    }
+    
 }
