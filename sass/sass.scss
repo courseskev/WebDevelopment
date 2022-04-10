@@ -111,6 +111,7 @@ footer {
     grid-template-columns: 150px repeat(6, 1fr);
     grid-template-rows: 1fr 7fr 3fr 0.1fr;
     grid-row-gap: 3px;
+    grid-column-gap: 10px;
 
     .logo {
         grid-area: logo;
@@ -190,7 +191,7 @@ footer {
     .panelIzquierdo {
         grid-area: panelIzquierdo;
         /*background-color: rgb(239 236 226);*/
-        padding-top: 8%;
+        padding-top: 8%;        
         h2 {
             font-size: 40px;
             margin-top: 15px;
